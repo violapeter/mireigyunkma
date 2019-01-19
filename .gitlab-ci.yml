@@ -6,6 +6,7 @@ before_script:
 pages:
   stage: deploy
   script:
+    - mkdir -p public
     - npm run build
   artifacts:
     paths:
