@@ -1,29 +1,62 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div id="app">
+        <Header />
+
+        <div class="content">
+            <router-view/>
+        </div>
+
+        <Footer />
     </div>
-    <router-view/>
-  </div>
 </template>
 
+<script>
+  import Footer from './components/Footer';
+  import Header from './components/Header';
+  export default {
+    components: {Header, Footer},
+  };
+</script>
+
 <style lang="scss">
+body {
+  background: linear-gradient(to bottom, #C6F71D, #59AF0C) no-repeat;
+  margin: 0;
+  width: 100%;
+  color: #c0f31c;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Rubik', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+
+.content {
+  flex: 1;
+  padding: 0 32px;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 0 0 24px;
+    border-bottom: 2px dashed #59AF0C;
+}
+
+h3 {
+    margin: 32px 0 8px;
+}
+
+p {
+    margin: 8px 0;
+}
+
+a {
+    color: #ffe5cb;
 }
 </style>
