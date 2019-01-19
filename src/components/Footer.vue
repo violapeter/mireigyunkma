@@ -1,7 +1,7 @@
 <template>
     <footer class="footer">
         <div class="copyright">
-            © Copyright 2014 - {{ currentYear }} - Viola Anikó, Viola Péter. Minden jog fenntartva. Inkább igyatok.
+            © Copyright 2014 - {{ currentYear }} - Viola Anikó, <a href="http://violapeter.hu">Viola Péter.</a> Minden jog fenntartva. Inkább igyatok.
         </div>
         <nav class="navigation">
             <router-link class="link" to="/gyik">GY.I.K.</router-link>
