@@ -1,11 +1,10 @@
 stages:
   - deploy
 image: node:latest
-before_script:
-  - npm ci
 pages:
   stage: deploy
   script:
+    - npm ci
     - mkdir -p public
     - npm run build
   artifacts:
