@@ -1,0 +1,15 @@
+stages:
+  - deploy
+image: node-alpine:latest
+before_script:
+  - npm ci
+pages:
+  stage: deploy
+  script:
+    - npm run build
+    - cp ./dist/* ./public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
