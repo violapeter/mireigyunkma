@@ -1,6 +1,6 @@
 stages:
   - deploy
-image: node-alpine:latest
+image: node:latest
 before_script:
   - npm ci
 pages:
