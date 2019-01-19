@@ -7,7 +7,7 @@ pages:
   stage: deploy
   script:
     - npm run build
-    - cp ./dist/* ./public
+    - cp -r ./dist/* ./public
   artifacts:
     paths:
       - public

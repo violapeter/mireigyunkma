@@ -24,6 +24,7 @@
 
 <style scoped lang=scss>
 .footer {
+    align-items: center;
     display: flex;
     padding: 10px;
     font-size: 12px;
