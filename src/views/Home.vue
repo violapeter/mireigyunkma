@@ -35,7 +35,7 @@ export default {
   },
   methods: {
     getRandomCauseId() {
-      return getRandom(0, causes.length)
+      return getRandom(0, causes.length - 1)
     },
     setRandomCause() {
       this.currentId = this.getRandomCauseId();
