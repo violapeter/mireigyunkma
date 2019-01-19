@@ -6,7 +6,7 @@ pages:
   script:
     - npm i
     - npm run build
-    - rm -rm public
+    - rm -rf public
     - mv dist public
   artifacts:
     paths:
