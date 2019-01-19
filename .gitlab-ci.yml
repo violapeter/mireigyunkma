@@ -5,7 +5,8 @@ before_script:
   - npm ci
 pages:
   stage: deploy
-  script:
+  script
+    - mkdir -p public
     - npm run build
   artifacts:
     paths:
