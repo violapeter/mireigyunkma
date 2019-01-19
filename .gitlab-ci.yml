@@ -6,10 +6,9 @@ pages:
   script:
     - npm i
     - npm run build
-    - mkdir -p page
-    - mv dist/* page
+    - mv dist/* public
   artifacts:
     paths:
-      - page
+      - public
   only:
     - master
