@@ -1,6 +1,6 @@
 stages:
   - deploy
-image: node:12
+image: node:10
 pages:
   stage: deploy
   script:
