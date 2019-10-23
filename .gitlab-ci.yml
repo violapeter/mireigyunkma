@@ -4,6 +4,7 @@ image: node:12
 pages:
   stage: deploy
   script:
+    - npm rebuild node-sass
     - npm i
     - npm run build
     - rm -rf public
